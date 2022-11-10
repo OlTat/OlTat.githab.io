@@ -1,0 +1,97 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.form{
+	width: 1200px;
+	margin: auto;
+	border: 1px solid green;
+}
+.form__header{
+	display: flex;
+	height: 40px;
+	background: green;
+	align-items: center;
+}
+.form__header select{
+	background: green;
+	border: none;
+	margin: 0 190px;	
+}
+.form__header h3{
+	margin: 0 15px;
+}
+.form__body>div{
+	width: 50%;
+}
+.form__body{
+	display: flex;
+}
+.form__item{
+	display: flex;
+	margin: 25px 0 25px 15px;
+	justify-content: space-between;
+}
+.form__item span {
+	color: red;
+}
+.form__item input[type="text"]{
+	width: 250px;
+} 
+.form__item .form__textarea{
+	height: 100px;
+}
+.form__item select {
+	width: 252px;
+}
+#w-50{
+	width: 125px;
+	margin-right: 125px;
+}
+
+.form__web{
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+}
+.form__webItem{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.form__webItem input{
+	width: 150px !important;
+}
+.form__footer{
+	height: 40px;
+	background: lightgrey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.form__footer > input{
+	border: none;
+	background: green;
+	color: white;
+	margin: 0 5px;
+	cursor: pointer;
+	padding: 5px 10px;
+	text-transform: uppercase;
+}
+.form__question{
+	width: 60%;
+	margin: 0 75px 35px 75px;
+}
+.form__list{
+	list-style: none;
+	width: 40%;
+	margin-right: 90px;
+}
+#v-50{
+	margin-right: 5px;
+}
+#g-50{
+	width: 330px;
+	margin-right: 40px;
+	height: 100px;
+}

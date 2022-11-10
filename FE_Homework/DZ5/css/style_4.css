@@ -1,0 +1,111 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: rgb(40, 40, 40);
+}
+.form{
+	width: 650px;
+	margin-top: 40px;
+	margin-left: 370px;
+	background: rgb(64, 188, 177);
+	padding: 55px;
+}
+.form__forms{
+	width: 100%;
+}
+.form__header{
+	display: flex;
+	height: 110px;
+	background: rgb(228, 238, 239);
+	border: 2px solid rgb(207, 219, 219);
+	align-items: center;
+	padding-left: 40px;
+	color: rgb(33, 35, 83);
+	font-size: 34px;
+}
+.form__body{
+	width: 100%;
+	background: white;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.form__item{
+	display: flex;
+	margin: 0 0 0 45px;
+	justify-content: space-between;
+	align-items: center;
+}
+.form__itemText{
+	margin-right: 20px;
+	margin-top: 40px;
+	margin-bottom: 5px;
+	font-size: 22px;
+	color: rgb(148, 140, 140);
+}
+.form__item input[type="text"]{
+	width: 360px;
+	height: 45px;
+	border: 3px solid rgb(207, 219, 219);
+	cursor: pointer;
+	font-size: 19px;
+	margin-top: 40px;
+	margin-right: 50px;
+	font-size: 30px;
+	color: gray;
+}
+.form__itemText2{
+	width: 150px;
+	margin-right: 10px;
+	text-decoration: underline;
+	color: blue;
+	font-size: 18px;
+	margin-top: 14px;
+	margin-left: 189px;
+}
+.form__item select{
+	width: 20px;
+	color: blue;
+	border: 3px solid blue;
+	margin-top: 35px;
+	margin-left: 189px;
+	margin-bottom: 40px;
+}
+.form__itemText3{
+	width: 200px;
+	font-size: 24px;
+	margin-top: 35px;
+	margin-right: 180px;
+	margin-bottom: 40px;
+}
+.form__footer{
+	display: flex;
+	height: 110px;
+	background: rgb(228, 238, 239);
+	border: 2px solid rgb(207, 219, 219);
+	align-items: center;
+	padding-left: 40px;
+}
+.form__footer > input[type="register"]{
+	border: none;
+	background: rgb(191, 193, 192);
+	color: white;
+	margin-left: 265px;
+	cursor: pointer;
+	padding-left: 35px;
+	font-size: 22px;
+	width: 120px;
+	height: 50px;
+}
+.form__footer > input[type="log in"]{
+	border: none;
+	background: rgb(84, 181, 224);
+	color: white;
+	margin-left: 25px;
+	cursor: pointer;
+	padding-left: 30px;
+	font-size: 22px;
+	width: 90px;
+	height: 50px;
+}

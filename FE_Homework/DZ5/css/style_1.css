@@ -1,0 +1,107 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.form{
+	width: 1000px;
+	margin: auto;
+	border: 1px solid blue;
+	cursor: pointer;
+	font-size: 18px;
+}
+.form__body{
+	display: flex;
+	justify-content: safe flex-end;
+	flex-direction: column;
+}
+.form__body>div{
+	width: 55%;
+}
+.form__item{
+	display: flex;
+	margin: 10px 0 10px 40px;
+	justify-content: safe flex-end;
+	align-items: center;
+}
+.form__itemText{
+	margin-right: 20px;
+}
+.form__item input[type="text"]{
+	width: 400px;
+	height: 30px;
+	border: 1px solid blue;
+	cursor: pointer;
+} 
+.form__item select {
+	width: 402px;
+	height: 33px;
+	border: 1px solid blue;
+	cursor: pointer;
+}
+.form__itemText2{
+	margin-left: 10px;
+	margin-right: 25px;
+	width: 40px;
+	margin-bottom: 135px;
+}
+.form__item input[type="text2"]{
+	width: 750px;
+	height: 150px;
+	margin-right: 60px;
+	margin-bottom: 15px;
+	border: 1px solid blue;
+	cursor: pointer;
+}
+.form__itemText3{
+	margin-left: 5px;
+	width: 175px;
+	margin-bottom: 40px;
+}
+.form__spam{
+	width: 700px;
+	display: flex;
+	margin-right: 195px;
+}
+.form__spamItem{
+	display: flex;
+	justify-content: space-between;
+}
+.form__spamItem input{
+	width: 150px !important;
+	height: 5px;
+	margin-bottom: 90px;
+}
+#v-60{
+	margin-right: 30px;
+	height: 30px;
+}
+#v-70{
+	margin-right: 10px;
+	height: 60px;
+	padding-right: 100px;
+	padding-left: 10px;
+	background: url('../img/ссp5.jpg');
+	background-size: 100% 100%;
+}
+.form__itemText4{
+	width: 150px;
+	margin-right: 10px;
+	text-decoration: underline;
+}
+.banner__btn{
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 185px;
+	background: lightgrey;
+	border: 1px solid black;
+	padding: 10px 20px;
+	border-radius: 5px;
+	position: relative;
+	width: 160px;
+}
+.banner__btn a{
+	color: black;
+	text-decoration: none;
+	font-size: 18px;
+}
