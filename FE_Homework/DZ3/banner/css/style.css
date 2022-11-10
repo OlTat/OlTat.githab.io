@@ -1,0 +1,86 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.banner{
+	background: url('../img/main-bg.jpg');
+	height: 100vh;background-size: 100% 100%;
+	display: flex;
+	justify-content: flex-end;
+	font-family: 'Dancing Script', cursive;
+}
+.banner__info{
+	width: 35%;
+	height: 300px;
+	margin-right: 25px;
+	margin-top: 160px;
+}
+.banner__info>div{
+	background: rgba(0, 0, 0, .3);
+	color: white;
+	margin: 10px 0;
+	padding: 15px 15px;
+}
+.banner__title{
+	font-size: 30px;
+}
+.banner__subtitle{
+	font-size: 22px;
+}
+.banner__text{
+	font-size: 17px;
+}
+.banner__btn{
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background: green;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	position: relative;
+}
+.banner__btn a{
+	color: white;
+	text-decoration: none;
+}
+.dots{
+	width: 160px;
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	align-items: center;
+	height: 50px;
+}
+.dots__items{
+	height: 25px;
+	width: 25px;
+	background: rgba(0, 0, 0, .7);
+	border-radius: 50%;
+}
+.switcher{
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	width: 110px;
+	font-size: 50px;
+	text-align: center;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+}
+.switcher__item{
+	height: 50px;
+	width: 50px;
+	background: rgba(0, 0, 0, .7);
+}
+.fa-facebook{
+	color: blue;
+	font-size: 40px;
+	margin-top: 5px;
+}
