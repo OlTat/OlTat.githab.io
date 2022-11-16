@@ -1,0 +1,197 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background: black;
+	padding: 300px 120px;
+}
+.container{
+	height: 16vh;
+	background: rgb(225, 226, 228);
+	border: 3px solid lightgrey;
+	display: flex;
+	text-transform: uppercase;
+}
+.container > div{
+	display: flex;
+	align-items: center;
+}
+.menu1{
+	border-right: 3px solid lightgrey;
+	width: 10%;
+	height: 100%;
+	padding-left: 3%;
+	cursor: pointer;
+	font-size: 25px;
+	transition: 1s;
+}
+.menu1:hover{
+	background: rgb(215, 217, 216);
+}
+.menu2{
+	border-right: 3px solid lightgrey;
+	width: 24%;
+	height: 100%;
+	padding-left: 1%;
+	color: grey;
+	cursor: pointer;
+	font-size: 25px;
+	transition: 1s;
+}
+.menu2:hover{
+	background: rgb(215, 217, 216);
+}
+.menu2 span{
+	margin-left: 6%;
+	font-size: 18px;
+}
+.menu2 i:hover .menu2__icon{
+	opacity: 1;
+}
+.menu2 i{
+	position: relative;
+}
+.block{
+	width: 0;
+	height: 0;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid black;
+	border-left: 10px solid transparent;
+	position: absolute;
+	right: 5px;
+	top: -10px;
+}
+.menu2__icon ul{
+	list-style: none;
+}
+.menu4__icon ul{
+	list-style: none;
+}
+.menu7__icon ul{
+	list-style: none;
+}
+.menu2__icon{
+	transition: 1s;
+	position: absolute;
+	background: black;
+	color: white;
+	padding: 5px;
+	font-size: 14px;
+	width: 100px;
+	left: -85px;
+	top: 27px;
+	border-radius: 5px;
+	opacity: 0;
+}
+.menu3{
+	border-right: 3px solid lightgrey;
+	width: 15%;
+	height: 100%;
+	padding-left: 3%;
+	color: grey;
+	cursor: pointer;
+	font-size: 25px;
+	transition: 1s;
+}
+.menu3:hover{
+	background: rgb(215, 217, 216);
+}
+.menu4{
+	border-right: 3px solid lightgrey;
+	width: 15%;
+	height: 100%;
+	padding-left: 3%;
+	color: grey;
+	cursor: pointer;
+	font-size: 25px;
+	transition: 1s;
+}
+.menu4:hover{
+	background: rgb(215, 217, 216);
+}
+.menu4 span{
+	margin-left: 6%;
+	font-size: 18px;
+}
+.menu4 i:hover .menu4__icon{
+	opacity: 1;
+}
+.menu4 i{
+	position: relative;
+}
+.menu4__icon{
+	transition: 1s;
+	position: absolute;
+	background: black;
+	color: white;
+	padding: 5px;
+	font-size: 14px;
+	width: 100px;
+	left: -85px;
+	top: 27px;
+	border-radius: 5px;
+	opacity: 0;
+}
+.menu5{
+	border-right: 3px solid lightgrey;
+	width: 8%;
+	height: 100%;
+	padding-left: 2%;
+	color: grey;
+	cursor: pointer;
+	font-size: 25px;
+	transition: 1s;
+}
+.menu5:hover{
+	background: rgb(215, 217, 216);
+}
+.menu6{
+	border-right: 3px solid lightgrey;
+	width: 8%;
+	height: 100%;
+	padding-left: 2%;
+	color: grey;
+	cursor: pointer;
+	font-size: 25px;
+	transition: 1s;
+}
+.menu6:hover{
+	background: rgb(215, 217, 216);
+}
+.menu7{
+	width: 20%;
+	height: 100%;
+	padding-left: 3%;
+	color: grey;
+	cursor: pointer;
+	font-size: 25px;
+	transition: 1s;
+}
+.menu7:hover{
+	background: rgb(215, 217, 216);
+}
+.menu7 span{
+	margin-left: 6%;
+	font-size: 18px;
+}
+.menu7 i:hover .menu7__icon{
+	opacity: 1;
+}
+.menu7 i{
+	position: relative;
+}
+.menu7__icon{
+	transition: 1s;
+	position: absolute;
+	background: black;
+	color: white;
+	padding: 5px;
+	font-size: 14px;
+	width: 100px;
+	left: -85px;
+	top: 27px;
+	border-radius: 5px;
+	opacity: 0;
+}

@@ -1,0 +1,101 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background: rgb(32, 32, 32);
+	padding: 300px 30px;
+}
+.container{
+	height: 55px;
+	background: rgb(68, 68, 68);
+	display: flex;
+}
+.menus_all{
+	width: 60%;
+	padding-top: 8px;
+	display: flex;
+}
+.menus_all > div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.menu{
+	border-right: 3px solid rgb(85, 85, 85);
+	width: 110px;
+	height: 30px;
+	padding: 5px 10px;
+	cursor: pointer;
+	color: rgb(153, 153, 143);
+	font-size: 22px;
+	transition: 1s;
+}
+.menu:hover{
+	color: rgb(185, 255, 0);
+}
+.menu span{
+	margin-left: 5px;
+}
+.socials_all{
+	width: 40%;
+	padding-top: 14px;
+	display: flex;
+}
+.socials_all > div{
+	display: flex;
+	align-items: center;
+}
+.social1{
+	width: 130px;
+	height: 30px;
+	margin-left: 140px;
+	cursor: pointer;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	color: rgb(153, 153, 143);
+	font-size: 22px;
+	transition: 1s;
+}
+.social1:hover{
+	color: rgb(185, 255, 0);
+}
+.social1 span{
+	margin-right: 20px;
+}
+.social2{
+	width: 130px;
+	height: 30px;
+	margin-left: 10px;
+	margin-right: 40px;
+	cursor: pointer;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	color: rgb(153, 153, 143);
+	font-size: 22px;
+	transition: 1s;
+}
+.social2:hover{
+	color: rgb(185, 255, 0);
+}
+.social2 span{
+	margin-right: 20px;
+}
+.social3{
+	width: 60px;
+	height: 30px;
+	margin-left: 30px;
+	cursor: pointer;
+	color: rgb(153, 153, 143);
+	font-size: 22px;
+	transition: 1s;
+}
+.social3:hover{
+	color: rgb(185, 255, 0);
+}
+.social3 span{
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	margin-right: 10px;
+}
