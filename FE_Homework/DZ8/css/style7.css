@@ -1,0 +1,246 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background: rgb(32, 32, 32);
+	padding: 80px 100px;
+}
+.container{
+	max-width: 1200px;
+	background: rgb(246, 246, 246);
+	margin: auto;
+}
+.header{
+	height: 70px;
+	background: black;
+	display: flex;
+	color: white;
+	align-items: center;
+/*	position: fixed;*/
+/*	z-index: 1;*/
+	width: 1200px;
+}
+.header__logo{
+	color: rgb(253, 255, 254);
+	text-transform: uppercase;
+	font-size: 30px;
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	font-weight: bolder;
+}
+.header__logo span{
+	color: rgb(149, 121, 109);
+	font-weight: lighter;
+}
+.header__menu{
+	width: 50%;
+}
+.header__menu ul{
+	list-style: none;
+	display: flex;
+	width: 70%;
+	justify-content: space-between;
+	margin-left: 350px;
+}
+.header__menu ul a{
+	color: rgb(164, 164, 164);
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: 1s;
+}
+.header__menu ul a:hover{
+	color: white;
+}
+.sections{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	background: url(../img/state.jpg);
+}
+.section1{
+	min-height: 100vh;
+	width: 60vw;
+}
+.section1__info{
+	width: 260px;
+	height: 4vh;
+	font-size: 25px;
+	color: rgb(177, 177, 177);
+	margin-top: 10%;
+	margin-left: 60%;
+}
+.section1__title{
+	width: 150px;
+	height: 9vh;
+	color: rgb(253, 255, 254);
+	text-transform: uppercase;
+	font-size: 60px;
+	margin-top: 6%;
+	margin-left: 15%;
+	font-weight: bolder;
+}
+.section1__title span{
+	color: rgb(149, 121, 109);
+	font-weight: lighter;
+}
+.section1__subtitle{
+	width: 420px;
+	height: 10vh;
+	color: rgb(252, 252, 252);
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-top: 6%;
+	margin-left: 15%;
+}
+.section1__minititle{
+	width: 70px;
+	height: 5vh;
+	color: rgb(252, 252, 252);
+	font-size: 30px;
+	margin-top: 3%;
+	margin-left: 15%;
+}
+.section1__text{
+	width: 380px;
+	height: 6vh;
+	color: rgb(189, 189, 189);
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top: 6%;
+	margin-left: 15%;
+}
+.section1__btn{
+	border: 2px solid rgb(226, 226, 226);
+	background: rgb(155, 155, 155);
+	color: rgb(248, 248, 248);
+	padding: 7px 14px;
+	cursor: pointer;
+	margin-top: 7%;
+	margin-left: 15%
+}
+.section2{
+	min-height: 100vh;
+	width: 40vw;
+}
+.banner{
+	width: 340px;
+	height: 50vh;
+	margin-top: 40%;
+	margin-left: 3%;
+}
+.banner__hd{
+	width: 340px;
+	height: 6vh;
+	font-size: 20px;
+	color: rgb(39, 39, 39);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bolder;
+	background: rgb(246, 246, 246);
+}
+.banner__hd span{
+	color: rgb(198, 153, 98);
+	text-transform: uppercase;
+}
+.banner__bn{
+	width: 340px;
+	height: 38vh;
+	background: rgb(254, 254, 254);
+	border-top: 2px solid rgb(222, 222, 222);
+}
+.banner__bn > div{
+	width: 260px;
+	height: 3vh;
+	border-bottom: 2px solid rgb(222, 222, 222);
+	color: rgb(209, 209, 209);
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	padding-left: 6px;
+	padding-bottom: 2px;
+	margin-left: 35px;
+	margin-top: 50px;
+}
+.banner__ft{
+	width: 340px;
+	height: 6vh;
+	font-size: 15px;
+	color: rgb(227, 203, 176);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bolder;
+	background: rgb(254, 157, 80);
+	cursor: pointer;
+}
+.footer{
+	height: 100px;
+	background: rgb(255, 255, 255);
+	display: flex;
+	color: white;
+	align-items: center;
+}
+.footer__logos{
+	width: 500px;
+}
+.footer__logo{
+	color: rgb(39, 39, 39);
+	font-size: 20px;
+	width: 118px;
+	display: flex;
+	justify-content: center;
+	margin-left: 110px;
+	background: rgba(241, 241, 241, .6);
+	font-weight: bolder;
+}
+.footer__logo2{
+	color: rgb(161, 161, 161);
+	font-size: 10px;
+	width: 290px;
+	display: flex;
+	justify-content: center;
+	margin-left: 110px;
+	padding-left: 4px;
+	margin-top: 8px;
+	background: rgba(241, 241, 241, .6);
+}
+.footer__socials{
+	width: 50%;
+}
+.footer__socials ul{
+	list-style: none;
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	font-size: 35px;
+}
+.fa-facebook-f{
+	color: rgb(205, 205, 205);
+}
+.fa-twitter{
+	color: rgb(205, 205, 205);
+}
+.fa-google-plus-g{
+	color: rgb(205, 205, 205);
+}
+.fa-pinterest{
+	color: rgb(205, 205, 205);
+}
+.fa-camera-retro{
+	color: rgb(205, 205, 205);
+}
+.fa-stumbleupon{
+	color: rgb(205, 205, 205);
+}
+.fa-wifi{
+	color: rgb(205, 205, 205);
+}
+.footer2{
+	height: 25px;
+	background: rgb(246, 246, 246);
+	border-top: 2px solid rgb(198, 198, 198);
+}
