@@ -1,0 +1,4 @@
+weight : 90
+name : Oleg
+height : 190
+region : Ukraine
