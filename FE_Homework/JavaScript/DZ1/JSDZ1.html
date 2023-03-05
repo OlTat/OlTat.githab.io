@@ -1,0 +1,98 @@
+<!-- 
+    1. По координатам двух точек, которые вводит пользователь, определить уравнение прямой, проходящей через эти точки.
+    Общий вид уравнения: y = kx + b; где k = (y1 - y2) / (x1 - x2), b = y2 - k*x2.
+    
+    2. Обменять значения двух переменных, используя третью (буферную) переменную.
+    
+    3. Объявите две переменные: admin и name. Запишите в name строку "Василий". Замените значение из name в admin. Выведите admin.
+    
+    4. Получить от пользователя данные о пользователе: имя, фамилию, возраст. Обработать их и вывести на экран.
+    
+    5. Запросите у пользователя его возраст, после чего выведите на экран модальное окно с вопросом: "Ваш возраст ...(введеное пользователем число) лет?". Далее в зависимости от выбора пользователя выводится модальное окно с информацией true или false.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JSDZ1</title>
+	<script type="text/javascript">
+
+		// 1. По координатам двух точек, которые вводит пользователь, определить уравнение прямой, проходящей через эти точки.
+    	// Общий вид уравнения: y = kx + b; где k = (y1 - y2) / (x1 - x2), b = y2 - k*x2.
+    	var x1 = +prompt('Введите значение координыты x1.');
+    	var y1 = +prompt('Введите значение координыты y1.');
+    	var x2 = +prompt('Введите значение координыты x2.');
+    	var y2 = +prompt('Введите значение координыты y2.');
+    	// Решение:
+    	var k = (y1 - y2) / (x1 - x2);
+    	var b = y2 - k*x2;
+    	document.write(`y=${k}x+${b}` + '<br/>');
+    	document.write("****" + '<br/>');
+		document.write("****" + '<br/>');
+		
+		// 2. Обменять значения двух переменных, используя третью (буферную) переменную.
+		var a = 1;
+		var b = 2;
+		var c;
+		console.log(a);
+		console.log(b);
+		console.log("****");
+		document.write("a = " + a + '<br/>');
+		document.write("b = " + b + '<br/>');
+		document.write("****" + '<br/>');
+		// Сделать через с так, чтобы стало: a = 2; b = 1.
+		// Решение:
+		c = a;
+		b = c;
+		a = ++c;
+		console.log(a);
+		console.log(b);
+		console.log("****");
+		document.write("a = " + a + '<br/>');
+		document.write("b = " + b + '<br/>');
+		document.write("****" + '<br/>');
+		document.write("****" + '<br/>');
+
+		// 3. Объявите две переменные: admin и name. Запишите в name строку "Василий". Замените значение из name в admin. Выведите admin.
+		var admin = "Иван";
+		var name = "Василий";
+		console.log(admin);
+		console.log(name);
+		console.log("****");
+		document.write("admin = " + admin + '<br/>');
+		document.write("name = " + name + '<br/>');
+		document.write("****" + '<br/>');
+		// Решение:
+		admin = name;
+		console.log(admin);
+		console.log(name);
+		console.log("****");
+		document.write("admin = " + admin + '<br/>');
+		document.write("name = " + name + '<br/>');
+		document.write("****" + '<br/>');
+		document.write("****" + '<br/>');
+
+		// 4. Получить от пользователя данные о пользователе: имя, фамилию, возраст. Обработать их и вывести на экран.
+		var name = prompt('Введите Ваше имя.');
+		var secondName = prompt('Введите Вашу фамилию.');
+		var age = +prompt('Введите число Ваших полных лет.');
+		// Решение:
+		document.write("Вас зовут: " + name + " " + secondName + "." + " Вам " + age + " лет." + '<br/>');
+		document.write("****" + '<br/>');
+		document.write("****" + '<br/>');
+
+		// 5. Запросите у пользователя его возраст, после чего выведите на экран модальное окно с вопросом: "Ваш возраст ...(введеное пользователем число) лет?". Далее в зависимости от выбора пользователя выводится модальное окно с информацией true или false.
+		var age = +prompt('Введите число Ваших полных лет.');
+		// Решение:
+		var answer = confirm("Ваш возраст "+ age +" лет?");
+		alert("Утверждение, что Ваш возраст "+ age +" лет - "+ answer);
+		document.write("****" + '<br/>');
+		document.write("****" + '<br/>');
+
+    </script>
+</head>
+<body>
+	
+</body>
+</html>
