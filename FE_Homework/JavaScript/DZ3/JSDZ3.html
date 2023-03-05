@@ -1,0 +1,89 @@
+<!-- 
+    1. Построить прямоугольный треугольник состоящий из символа "*".
+
+    2. Дано два числа A и B где (A<B). 
+       Выведите на экран суму всех чисел расположенных в числовом промежутке от А до В. 
+       Выведите на экран все нечетные значения, расположенные в числовом промежутке от А до В. 
+
+    3. Вывести на экран ряд чисел Фибоначчи, состоящий из n элементов (n принять от пользователя).
+       Числа Фибоначчи – это элементы числовой последовательности, в которой каждое последующее число равно сумме двух предыдущих.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JSDZ3</title>
+	<script type="text/javascript">
+
+		// 1. Построить прямоугольный треугольник состоящий из символа "*".
+		// Решение:
+		for (var i = 0; i < 10; i++) {
+            for (var j = 0; j <= i; j++) {
+                document.write("* ");
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<hr />");
+
+        for (var i = 10; i > 0; i--) {
+            for (var j = 1; j <= i; j++) {
+                document.write("* ");
+            }
+            document.write("<br/>");
+        }
+        document.write("<br/>");
+        document.write("<hr />");
+        document.write("<hr />");
+        document.write("<br/>");
+
+        // 2. Дано два числа A и B где (A<B).
+        // Выведите на экран все нечетные значения, расположенные в числовом промежутке от А до В.
+        // Выведите на экран суму всех чисел расположенных в числовом промежутке от А до В. 
+        let numA = 5;
+        let numB = 20;
+        let sum = 0;
+        let oddValues = 0;
+        // Решение:
+        for (i = numA; i <= numB; i++) {
+            sum += i;
+            oddValues = i;
+            if (oddValues % 2 == 1) {
+            	document.write("oddValues = " + oddValues);
+            	document.write("<br/>");
+            }
+        }
+        document.write("sum = " + sum);
+
+        document.write("<br/>");
+        document.write("<hr />");
+        document.write("<hr />");
+        document.write("<br/>");
+
+        // 3. Вывести на экран ряд чисел Фибоначчи, состоящий из n элементов (n принять от пользователя).
+        // Числа Фибоначчи – это элементы числовой последовательности, в которой каждое последующее число 
+        // равно сумме двух предыдущих.
+        var n = +prompt('Введите количество элементов.');
+        document.write("n = " + n + "<br/>");
+        // Решение:
+        var fib = Array(n);
+		fib[0] = 1;
+		fib[1] = 1;
+        for (i = 2; i < n; i++) {
+        	fib[i] = fib[i-1] + fib[i-2];
+		}
+		document.write("Ряд Фибоначи из " + n + " элементов:" + "<br/>");
+		document.write(fib);
+
+		document.write("<br/>");
+        document.write("<hr />");
+        document.write("<hr />");
+        document.write("<br/>");
+
+    </script>
+</head>
+<body>
+	
+</body>
+</html>
