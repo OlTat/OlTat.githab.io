@@ -1,0 +1,99 @@
+<!-- 
+    1. За допомогою властивостей select.options, select.value та select.selectedIndex, додати 4 функціональні кнопки для навігації по елементам випадаючого списку.  
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JSDZ5</title>
+	<style>
+		body *{
+			width: 20%;
+			height: 60px;
+			font-size: 30px;
+			font-weight: 900;
+			color: darkblue;
+			background: lightskyblue;
+			border: 4px solid darkblue;
+		}
+		select{
+        	height: 50px;
+        	color: red;
+        	background: gainsboro;
+      	}
+      	input{
+      		height: 50px;
+      		color: green;
+      		background: yellowgreen;
+      	}
+	</style>
+</head>
+<body>
+	<input type="text" id="inp">
+	<br>
+	<button id="getCreate">Add element</button>
+	<br>
+    <br>
+
+	<select name="" id="select">
+        <option value="">First meaning</option>
+        <option value="">Second meaning</option>
+        <option value="">Third meaning</option>
+        <option value="">Fourth meaning</option>
+        <option value="">Fifth meaning</option>
+    </select>
+    <br>
+    <br>
+	
+	<button id="getFirst">First</button>
+	<button id="getLast">Last</button>
+	<br>
+    <br>
+	<button id="getNext">Next</button>
+	<button id="getPrevious">Previous</button>
+
+	<script type="text/javascript">
+
+		const inp = document.getElementById('inp');
+		const select = document.querySelector("#select");
+		const getCreateEl = document.getElementById('getCreate');
+		const getFirstEl = document.querySelector("#getFirst");
+		const getLastEl = document.querySelector("#getLast");
+		const getNextEl = document.querySelector("#getNext");
+		const getPreviousEl = document.querySelector("#getPrevious");
+		
+		getFirstEl.addEventListener('click', function(){
+			select.firstElementChild.selected = true;
+		})
+		getLastEl.addEventListener('click', function(){
+			select.lastElementChild.selected = true;
+		})
+		getNextEl.addEventListener('click', function(){
+			for(i=0; i <= select.children.length; i++){
+				if(select.children[i].selected === true){
+					select.children[i].nextElementSibling.selected = true;
+					break;
+				}
+			}
+		})
+		getPreviousEl.addEventListener('click', function(){
+			for(i=0; i <= select.children.length; i++){
+				if(select.children[i].selected === true){
+					select.children[i].previousElementSibling.selected = true;
+					break;
+				}
+			}
+		})
+		getCreateEl.addEventListener('click', function(){			
+			if(inp.value != '') {
+			const option = document.createElement('option');
+			option.innerText = inp.value;
+			select.appendChild(option);
+			inp.value = '';
+			}
+		})
+
+	</script>
+</body>
+</html>
