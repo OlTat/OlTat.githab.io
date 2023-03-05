@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy URL</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        body{
+            background: rgb(233, 242, 241);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            background: rgb(56, 194, 127);
+            border: 6px solid rgb(16, 18, 17);
+            width: 700px;
+            height: 500px;
+            margin-top: 70px;
+        }
+
+        form{
+            margin-top: 70px;
+            font-weight:900;
+            font-size: 25px;
+            color: firebrick;
+        }
+
+        input{
+            margin: 10px;
+            width: 500px;
+            height: 30px;
+            background: rgb(245, 247, 129);
+            border: 3px solid rgb(150, 126, 5);
+        }
+
+        .long_url{
+            width: 170px;
+            height: 30px;
+        }
+
+        button{
+            cursor: pointer;
+            width: 170px;
+            height: 30px;
+            font-weight:900;
+            text-decoration:blink;
+            font-size: 16px;
+            color: darkblue;
+            background: rgb(93, 227, 245);
+            border: 3px solid rgb(11, 39, 140);
+        }
+
+    </style>
+</head>
+<body style="text-align: center">
+
+<div>
+<form action="/delete_url" method="post">
+    <label for="delete_url"><b>Введите id короткой ссылки которую нужно удалить</b></label><br>
+    <input type="text" name="delete_url" id="delete_url" class="long_url"><br>
+    <button type="submit">Удалить ссылку</button>
+</form>
+
+<form action="/add_url" method="post">
+    <label for="add_url"><b>Введите исходную ссылку для получения короткой ссылки</b></label><br>
+    <input id="add_url" type="text" name="add_url"><br>
+    <button type="submit">Добавить ссылку</button>
+</form>
+</div>
+
+</body>
+</html>

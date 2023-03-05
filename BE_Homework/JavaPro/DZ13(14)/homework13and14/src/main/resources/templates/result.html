@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            text-align: center;
+            background: rgb(250, 250, 250);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div{
+            background: rgb(136, 242, 235);
+            border: 6px solid rgb(97, 5, 22);
+            width: 950px;
+            height: 200px;
+            margin-top: 70px;
+            padding-top: 150px;
+        }
+
+        p{
+            font-size: 25px;
+            border: black 2px solid;
+            width: 900px;
+            font-weight: 900;
+            color: midnightblue;
+            font-style: italic;
+            margin: 0 auto;
+            padding: 5px;
+            overflow-x: hidden;
+            background: lightgrey;
+        }
+
+    </style>
+</head>
+<body>
+
+<div >
+  <p th:text="${result}"></p>
+</div>
+
+</body>
+</html>
