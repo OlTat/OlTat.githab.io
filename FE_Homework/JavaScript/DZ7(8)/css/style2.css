@@ -1,0 +1,91 @@
+*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.parent{
+		background: lightgray;
+		border: 4px solid black;
+		width: 80%;
+		height: 95vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.red{
+		border: 2px solid brown;
+		width: 97%;
+		height: 6vh;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.red:nth-child(1){
+		height: 12vh;
+		}
+	.blue{
+		width: 49%;
+		height: 85%;
+	}
+	.red:nth-child(1) .blue:nth-child(1){
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.brown{
+		width: 98%;
+		height: 40%;
+		font-size: 24px;
+		font-weight: 900;
+	}
+	.yellow{
+		width: 98%;
+		height: 38%;
+		margin-left: 4px;
+		margin-top: 4px;
+		font-size: 24px;
+		font-weight: 900;
+	}
+	.black{
+		width: 98%;
+		height: 80%;
+		margin-left: 5px;
+		margin-top: 2px;
+		font-size: 24px;
+		font-weight: 900;
+	}
+	.red:nth-child(9) .blue:nth-child(2){
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.red:nth-child(10) .blue:nth-child(2){
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.red:nth-child(11) .blue:nth-child(2){
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.green{
+		width: 49%;
+		height: 80%;
+		font-size: 24px;
+		font-weight: 900;
+	}
+	.red:nth-child(11){
+		display: flex;
+		justify-content: flex-start;
+		}
+	.red:nth-child(12) .blue:nth-child(1){
+		margin-left: 4px;
+	}
+	
