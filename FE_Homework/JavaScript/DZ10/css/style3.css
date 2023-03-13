@@ -1,0 +1,40 @@
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	body{
+		background: rgb(40, 40, 40);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.form{
+		width: 700px;
+		height: 500px;
+		background: rgb(193, 189, 186);
+		border: 4px groove rgb(28, 28, 28);
+		margin-top: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.fon{ 
+		width: 600px;
+		height: 400px;
+		background: rgb(37, 51, 60);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.tab{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		height: 80%;
+		color: white;
+		font-size: 50px;
+		font-weight: 900;
+		background: rgb(32, 172, 145);
+	}
+	

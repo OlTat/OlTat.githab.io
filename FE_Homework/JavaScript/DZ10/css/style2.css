@@ -1,0 +1,155 @@
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	body{
+		background: rgb(40, 40, 40);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.form{
+		width: 700px;
+		height: 500px;
+		background: rgb(193, 189, 186);
+		border: 4px groove rgb(28, 28, 28);
+		margin-top: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.fon{ 
+		width: 600px;
+		height: 400px;
+		background: rgb(37, 51, 60);
+	}
+	.tab1{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 85%;
+		height: 6vh;
+		margin: 38px 5px 15px 45px;
+	}
+	.sig{
+		width: 50%;
+		height: 6vh;
+		background: rgb(32, 172, 145);
+		color: rgb(211, 255, 231);
+		font-size: 24px;
+		font-weight: 300;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.log{
+		width: 50%;
+		height: 6vh;
+		background: rgb(68, 83, 90);
+		color: rgb(172, 176, 175);
+		font-size: 24px;
+		font-weight: 300;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.tab2{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 85%;
+		height: 6vh;
+		margin: 20px 5px 15px 45px;
+		color: white;
+		font-size: 30px;
+		font-weight: 300;
+	}
+	.tab3{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid rgb(162, 177, 184);
+		width: 85%;
+		height: 4vh;
+		margin: 20px 5px 5px 45px;
+	}
+	.ema{
+		width: 35%;
+		height: 4vh;
+		color: rgb(144, 154, 163);
+		font-size: 24px;
+		font-weight: 300;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-left: 10px;
+	}
+	.ema>span{
+		color: rgb(46, 160, 135);
+		}
+	.ema2{
+		width: 65%;
+		height: 4vh;
+		color: rgb(144, 154, 163);
+		font-size: 24px;
+		font-weight: 300;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.tab4{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid rgb(162, 177, 184);
+		width: 85%;
+		height: 4vh;
+		margin: 20px 5px 5px 45px;
+	}
+	.pas{
+		width: 35%;
+		height: 4vh;
+		color: rgb(144, 154, 163);
+		font-size: 24px;
+		font-weight: 300;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-left: 10px;
+	}
+	.pas>span{
+		color: rgb(46, 160, 135);
+		}
+	.pas2{
+		width: 65%;
+		height: 4vh;
+		color: rgb(144, 154, 163);
+		font-size: 24px;
+		font-weight: 300;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.tab5{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 85%;
+		height: 3vh;
+		margin: 20px 5px 5px 45px;
+		color: rgb(46, 160, 135);
+		font-size: 16px;
+		font-weight: 300;
+	}
+	.banner__btn{
+		display: block;
+		background: rgb(32, 172, 145);
+		width: 85%;
+		height: 8vh;
+		margin: 20px 5px 12px 45px;
+	}
+	.banner__btn a{
+		color: white;
+		text-decoration: none;
+		font-size: 30px;
+	}
