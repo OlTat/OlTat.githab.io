@@ -1,0 +1,115 @@
+<!--  
+Алгоритм взаємодії з клієнтом наступний: 
+В налаштуваннях цієї програми необхідно вводити одну константу мінімальну заробітну плату, це десь на адміністративній частині сайту, що недоступна користувачу.
+Ось дещо структурований алгоритм взаємодії
+0. Оберіть характер стягнення: 1. майнове; 2. немайнове.
+Варіанти: 
+1. Майнове:                         
+1.1      Якщо майнове то: введіть суму боргу, яку необхідно стягнути,
+1.1.1    Якщо 2% від суми боргу менше або дорівнює 10 мінімальним заробітним платам то розмір авансового внеску дорівнює 2% від суми, яку необхідно стягнути
+1.1.2    Якщо 2% від суми боргу більше 10 мінімальних заробітних плат то сума авансового внеску дорівнює 10 мінімальним заробітним платам.
+
+2. Немайнове: 
+2.1 Якщо немайнове, то питання: зазначте будь ласка стягувача із запропонованих варіантів. 
+2.1.1     Стягувачем є фізична особа (громадянин) наслідок: розмір авансового внеску 1 мінімальна заробітна плата програма розраховує.
+2.1.2     Стягувачем є юридична особа (підприємство, установа, організація) наслідок: розмір авансового внеску 2 мінімальні заробітні плати  програма розраховує.  
+-->
+
+<!-- DZ
+1. Сделать проверку, чтобы пользователь не мог ввести символы в поле "Сумма: ".
+2. Добавить стили в визуализацию.
+3. Добавить кнопку при нажатии на которую:
+   3.1. Формируется платеж (кнопка отправляет информацию по платежу на сервер);
+   3.2. Формируется квитанция (кнопка через локальное хранилище вытаскивает информацию из ФИО, Адрес, Почта, Комиссия и Сумма для расчетов и платежей и передает, вставляет в другой документ всю эту информацию и формирует квитанцию).
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JSDZ7_8</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<form action="" class="form">
+
+		<div class="form__header">
+			<h3>ФОРМА ОБРАТНОЙ СВЯЗИ</h3>
+		</div>
+
+		<div class="body_form">
+			<div class="form__item">
+    			<div>ФИО: </div>
+    			<input type="text" class="fio">
+    		</div>
+    	</div>
+
+    	<div class="body_form">	
+    		<div class="form__item">
+    			<div>Адресс: </div>
+    			<input type="text" class="adres">
+    		</div>		
+    	</div>	
+
+    	<div class="body_form">	
+    		<div class="form__item">		
+    			<div>Почта: </div>
+    			<input type="text" class="posts">	
+    		</div>
+    	</div>	
+
+    	<div class="switcher">
+    		<div class="body_form">	
+    			<div class="form__item">
+        			<div>Имущество</div>
+        			<input type="radio" name="prop" checked="checked" id="own">
+        		</div>
+    		</div>    
+        	<div class="body_form">
+        		<div class="form__item">	
+        			<div>Деньги</div>
+        			<input type="radio" name="prop" id="noOwn">	
+        		</div>
+        	</div>	
+    	</div>
+
+    	<div class="type hidden">
+    		<div class="body_form">
+    			<div class="form__item">
+        			<div>Физическое лицо</div>
+        			<input type="radio" name="type"  id="person">	
+        		</div>
+        	</div>	
+        	<div class="body_form">	
+        		<div class="form__item">	
+        			<div>Юридическое лицо</div>
+        			<input type="radio" name="type" id="company">	
+        		</div>
+        	</div>	
+    	</div>
+
+    	<div class="body_form">
+    		<div class="form__item">
+    			<div>Сумма: </div>
+    			<input id="sum" type="text">	
+    		</div>
+    	</div>	
+
+    	<div class="body_form">	
+    		<div class="form__item1">		
+    			<div>Комиссия:&nbsp;</div>
+    			<div id="tax" type="text"></div>
+    			<div>грн.</div>
+			</div>
+		</div>	
+
+    	<button class="banner__btn">
+    		<a href="billV2.html" id="getBill">Создать квитанцию</a>
+    	</button>
+    			
+		<div id="block"></div>
+
+	</form>
+	<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
